@@ -22,4 +22,9 @@ Route::get('/sobre-nos', "SobreNosController@sobreNos");
 
 Route::get('/contato', "ContatoController@contato");
 
-
+Route::get(
+    '/contato/{nome}/{categoria_id}/{tipo?}',
+    function (string $nome, int $categoria_id = 1, string $tipo = "Ajuda") {
+        echo "$nome $categoria_id - $tipo.";
+    }
+)->where('categoria_id', '[0-9]+')->where('nome', '[A-Za-Z]+');
