@@ -3,7 +3,7 @@
 @endphp
 
 {{-- If elseif else --}}
-@if (count($fornecedores) > 0 && count($fornecedores) < 10)
+{{-- @if (count($fornecedores) > 0 && count($fornecedores) < 10)
     <h2>Existe alguns fornecedores</h2>
 @elseif (count($fornecedores) > 10)
     <h2>Existe muitos fornecedores</h2>
@@ -13,13 +13,21 @@
 
 @if ($fornecedores[0]['status'] == 'N')
     <h2>Fornecedor Inativo</h2>
-@endif
+@endif --}}
 
 {{-- Unless --}}
-
-
-@unless($fornecedores[0]['status'] == 'N')
+{{-- @unless($fornecedores[0]['status'] == 'N')
     <h2>Fornecedor Ativo</h2>
-@endunless
+@endunless --}}
 
-@dd($fornecedores)
+{{-- Isset --}}
+@isset($fornecedores)
+    <h2>{{ $fornecedores[0]['nome'] }}</h2>
+@endisset
+
+{{-- Empty --}}
+@empty($fornecedores[0]['cidade'])
+    <h3>Cidade está vazia</h3>
+@endempty
+
+{{-- @dd($fornecedores) --}}
