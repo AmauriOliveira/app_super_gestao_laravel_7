@@ -50,11 +50,7 @@ Route::prefix('/app')->group(function () {
     })->name('app.fornecedores');
 });
 
-Route::get('/rota1', function () {
-    return 'Rota 1';
-})->name('rota1');
-
-
+Route::get('/teste/{params1}/{params2}', 'TesteController@teste')->name('teste');
 
 Route::fallback(function () {
     echo 'A rota acessada não existe. <a href="/">Clique aqui</a> para voltar a Home.';
