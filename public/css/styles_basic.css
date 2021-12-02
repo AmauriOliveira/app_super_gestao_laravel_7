@@ -45,14 +45,24 @@ button {
     border: solid 1px #333;
 }
 
-button {
+.green-button {
     background-color: #7ab829;
     cursor: pointer;
     color: #fff;
 }
 
-button:hover {
+.green-button:hover {
     background-color: #6ea22c;
+}
+
+.blue-button {
+    background-color: #2967b8;
+    cursor: pointer;
+    color: #fff;
+}
+
+.blue-button:hover {
+    background-color: #2e2ca2;
 }
 
 ::placeholder {

@@ -29,7 +29,8 @@
                 <h1>Contato</h1>
                 <p>Caso tenha qualquer dúvida por favor entre em contato com nossa equipe pelo formulário abaixo.
                 <p>
-                    @component('site.layouts._components.form_contato')
+                    @component('site.layouts._components.form_contato', ['class_border_input' => 'borda-branca',
+                        'class_button_color' => 'green-button'])
                     @endcomponent
             </div>
         </div>
