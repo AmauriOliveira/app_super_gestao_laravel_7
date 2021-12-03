@@ -1,6 +1,6 @@
-  ![banner](img.com/a.png)
-
 # Curso Desenvolvedor Laravel
+
+<!-- ![banner](img.com/a.png) -->
 
 > Curso feito para aprender e praticar Laravel
 
@@ -10,34 +10,42 @@
 
 ## :telescope: Overview
 
-  [🏠 Homepage](https://github.com/AmauriOliveira)
+[🏠 Homepage](https://github.com/AmauriOliveira)
 uma longa descri
+
 ## :computer: Techs
-  
-- Php
-- laravel
+
+[![PHP Badge](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)](#)
+[![HTML5 Badge](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](#)
+[![CSS3 Badge](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)](#)
+[![Laravel Badge](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=Laravel&logoColor=white)](#)
+[![MySQL Badge](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)](#)
+[![Docker Badge](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](#)
+[![Git Badge](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)](#)
+[![GitHub Badge](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)](#)
+[![VSCode Badge](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)](#)
 
 ## :sparkles: Features
-  
-- features
 
+-   features
 
 ## :star2: Contributing
 
 Contributions, issues and feature requests are welcome!
 
-- ⭐️ Star the project
-- 🐛 Find and report issues
-- 📥 Submit PRs to help solve issues or add features
+-   ⭐️ Star the project
+-   🐛 Find and report issues
+-   📥 Submit PRs to help solve issues or add features
 
 Feel free to check [issues page](https://github.com/AmauriOliveira/app_super_gestao_laravel_7/issues). You can also take a look at the contributing guide.
 
 ## :bow: Author
 
-**Amauri Oliveira** 
-* Email: amauriibate32@hotmail.com
-* GitHub: [@AmauriOliveira](https://github.com/AmauriOliveira)
-* LinkedIn: [@amauri-oliveira-058066192](https://linkedin.com/in/amauri-oliveira-058066192)
+### **Amauri Oliveira**
+
+-   Email: amauriibate32@hotmail.com
+-   GitHub: [@AmauriOliveira](https://github.com/AmauriOliveira)
+-   LinkedIn: [@amauri-oliveira-058066192](https://linkedin.com/in/amauri-oliveira-058066192)
 
 ## :books: License
 
