@@ -9,8 +9,11 @@
 
         <div class="informacao-pagina">
             <div class="contato-principal">
-                @component('site.layouts._components.form_contato', ['class_border_input' => 'borda-preta',
-                    'class_button_color' => 'blue-button'])
+                @component('site.layouts._components.form_contato', [
+                    'class_border_input' => 'borda-preta',
+                    'class_button_color' => 'blue-button',
+                    'motivos' => $motivos,
+                    ])
                     <p>A nossa equipe logo responderá</p>
                     <p>Tempo medio de asa reposta</p>
                 @endcomponent
