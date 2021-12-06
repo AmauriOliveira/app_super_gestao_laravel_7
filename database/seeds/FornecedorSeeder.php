@@ -14,7 +14,7 @@ class FornecedorSeeder extends Seeder
     public function run()
     {
         // Essa forma requer o fillable configurado;
-        Fornecedor::create([
+        /*   Fornecedor::create([
             'nome' => 'Mattel Inc',
             'site' => 'www.mattel.com',
             'uf' => 'SP',
@@ -40,6 +40,7 @@ class FornecedorSeeder extends Seeder
             'site' => 'www.glory.com',
             'uf' => 'PR',
             'email' => 'sac@glory.com'
-        ]);
+        ]); */
+        factory(Fornecedor::class, 100)->create();
     }
 }

@@ -11,7 +11,7 @@ class SiteContatoSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
+    {/*
         SiteContato::create([
             'nome' => 'Sistema',
             'telefone' => '(16) 99999-9999',
@@ -26,6 +26,7 @@ class SiteContatoSeeder extends Seeder
             'email' => 'load@sistema.com',
             'motivo' => 1,
             'mensagem' => 'Carregando o mock'
-        ])->save();
+        ])->save(); */
+        factory(SiteContato::class, 100)->create();
     }
 }
