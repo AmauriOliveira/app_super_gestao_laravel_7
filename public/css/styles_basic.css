@@ -208,3 +208,11 @@ span {
 .redes-sociais img {
     margin: 0px 15px 0px 15px;
 }
+
+.error {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: red;
+}

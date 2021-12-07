@@ -59,7 +59,7 @@ class ContatoController extends Controller
         $req->validate([
             'nome' => 'required|min:3|max:40',
             'telefone' => 'required',
-            'email' => 'email',
+            'email' => 'email|unique:site_contatos', // o unique é apenas um exemplo
             'motivo_contatos_id' => 'required',
             'mensagem' => 'required',
         ]);
