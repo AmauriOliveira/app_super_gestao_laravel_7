@@ -61,7 +61,16 @@ class ContatoController extends Controller
             'telefone' => 'required',
             'email' => 'email|unique:site_contatos', // o unique é apenas um exemplo
             'motivo_contatos_id' => 'required',
-            'mensagem' => 'required',
+            'mensagem' => 'required|max:2000',
+        ], [
+            'nome.min' => 'O campo nome deve ter no minimo 3 caracteres.',
+            'nome.max' => 'O campo nome deve ter no maximo 40 caracteres.',
+            'email.email' => 'O campo e-mail deve ser um valido.',
+            'email.unique' => 'O campo e-mail já está em uso.',
+            'mensagem.max' => 'O campo mensagem deve ter no maximo 2000 caracteres.',
+            // genéricos
+            'required' => 'O campo :attribute é requerido.',
+
         ]);
 
         SiteContato::Create($req->all())->save();
