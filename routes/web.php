@@ -41,13 +41,10 @@ Route::get('/login', function () {
     return 'login';
 })->name('site.login');
 
-Route::prefix('/app')->group(function () {
-    Route::get('/produtos', function () {
-        return 'produtos';
-    })->name('app.produtos');
-    Route::get('/clientes', function () {
-        return 'clientes';
-    })->name('app.clientes');
+Route::middleware('autenticacao:default,active')->prefix('/app')->group(function () {
+    // Route::middleware('log.acesso', 'autenticacao')->get('/produtos', fn () => 'produtos')->name('app.produtos');
+    Route::get('/produtos', fn () => 'produtos')->name('app.produtos');
+    Route::get('/clientes', fn () => 'clientes')->name('app.clientes');
     Route::get('/fornecedores', "FornecedorController@index")->name('app.fornecedores');
 });
 
