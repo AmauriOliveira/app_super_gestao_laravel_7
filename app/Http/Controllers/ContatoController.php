@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\MotivoContato;
 use App\SiteContato;
 use GuzzleHttp\Promise\Create;
 use Illuminate\Http\Request;
@@ -48,11 +49,7 @@ class ContatoController extends Controller
         SiteContato::Create($req->all())->save();
         */
 
-        $motivos = [
-            '1' => 'Dúvida',
-            '2' => 'Elogio',
-            '3' => 'Reclamação',
-        ];
+        $motivos = $motivos = MotivoContato::all();
 
         return view("site.contato", ['motivos' => $motivos]);
     }
