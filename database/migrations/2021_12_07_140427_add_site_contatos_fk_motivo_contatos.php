@@ -15,13 +15,13 @@ class AddSiteContatosFkMotivoContatos extends Migration
     public function up()
     {
         Schema::table('site_contatos', function (Blueprint $table) {
-            $table->unsignedBigInteger('motivo_contato_id');
+            $table->unsignedBigInteger('motivo_contatos_id');
         });
 
-        DB::statement('update site_contatos set motivo_contato_id = motivo');
+        DB::statement('update site_contatos set motivo_contatos_id = motivo');
 
         Schema::table('site_contatos', function (Blueprint $table) {
-            $table->foreign('motivo_contato_id')->references('id')->on('motivo_contatos');
+            $table->foreign('motivo_contatos_id')->references('id')->on('motivo_contatos');
             $table->dropColumn('motivo');
         });
     }
@@ -35,13 +35,13 @@ class AddSiteContatosFkMotivoContatos extends Migration
     {
         Schema::table('site_contatos', function (Blueprint $table) {
             $table->integer('motivo');
-            $table->dropForeign('site_contatos_motivo_contato_id_foreign');
+            $table->dropForeign('site_contatos_motivo_contatos_id_foreign');
         });
 
-        DB::statement('update site_contatos set motivo = motivo_contato_id');
+        DB::statement('update site_contatos set motivo = motivo_contatos_id');
 
         Schema::table('site_contatos', function (Blueprint $table) {
-            $table->dropColumn('motivo_contato_id');
+            $table->dropColumn('motivo_contatos_id');
         });
     }
 }
