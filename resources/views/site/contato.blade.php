@@ -15,7 +15,7 @@
                     'motivos' => $motivos,
                     ])
                     <p>A nossa equipe logo responderá</p>
-                    <p>Tempo medio de asa reposta</p>
+                    <p>Nosso tempo médio de reposta são 4h</p>
                 @endcomponent
             </div>
         </div>
