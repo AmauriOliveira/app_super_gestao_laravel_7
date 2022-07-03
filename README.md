@@ -11,7 +11,7 @@
 ## :telescope: Overview
 
 [🏠 Homepage](https://github.com/AmauriOliveira)
-uma longa descri
+Nesse curso estou tendo meu primeiro contato com Laravel, já utilizei o PHP anteriormente, mas dessa vez comecei a aprender o framework.
 
 ## :computer: Techs
 
@@ -24,10 +24,6 @@ uma longa descri
 [![Git Badge](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)](#)
 [![GitHub Badge](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)](#)
 [![VSCode Badge](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)](#)
-
-## :sparkles: Features
-
--   features
 
 ## :star2: Contributing
 
